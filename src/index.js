@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { PetsOrderContextProvider } from './context/petsOrderContext';
+import { MemeContextProvider } from './context/memeDetailsContext';
 
 ReactDOM.render(
-  <PetsOrderContextProvider>
+  <MemeContextProvider>
     <App />
-  </PetsOrderContextProvider>,
+  </MemeContextProvider>,
   document.getElementById('root')
 );
 
