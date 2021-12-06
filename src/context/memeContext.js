@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const MemeContext = React.createContext({
+export const MemeContext = React.createContext({
     memes: [],
     initialiseMemes: () => {},
 });
@@ -15,7 +15,7 @@ export const MemeContextProvider = (props) => {
     
     
     return (<MemeContext.Provider
-     value={{memes: memes, initialiseMemes: initMemes }}
+     value={{memes: memes, initializeMemes: initMemes }}
     >
         {props.children}
     </MemeContext.Provider>)
