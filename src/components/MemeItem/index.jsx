@@ -11,7 +11,7 @@ export const MemeItem = (props) => {
                 <h1 className="meme-name"> {name} </h1>
                 <img className="meme-photo" src={image} alt={content + "meme of" + name} />
                 
-                <p className="meme-content">{content + 'meme'}</p>
+                <p className="meme-content">{content + ' meme'}</p>
                 
             </div>
         </Link>

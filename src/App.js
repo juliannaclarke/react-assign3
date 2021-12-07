@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import { Navbar } from './components/Navbar';
 import { MemeHomePage } from './components/pages/MemeHomePage';
-import {MemeDetails} from './components/pages/MemeDetails';
+import {MemeDetailsPage} from './components/pages/MemeDetails';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         </Route>
         <Route path="/cart"></Route>
         <Route path="/meme/:id">
-          <div>Individual Details</div>
+          <MemeDetailsPage/>
         </Route>
       </Switch>
     </Router>
